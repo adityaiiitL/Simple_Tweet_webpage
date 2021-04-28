@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #0099ff;
+        }
+        form,h1,ul{
+            text-align: center;
+           padding: 10px;
+            list-style: none;
+        }
+        h1{
+            margin-top: 100px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        li{
+            padding-top: 20px;
+            font-family: cursive;
+        }
+        input{
+            padding: 8px;
+            border-radius: 5px;
+            border: #0099ff solid 1px;
+            margin-left: 5px;
+        }
+        button{
+            padding: 8px;
+            width: 100px;
+            border-radius: 5px;
+            font-family: cursive;
+            background-color: #0099ff;
+            border: white 1px solid;
+            color: white;
+            transition: transform 0.2s, background-color 0.2s, color 0.2s;
+            margin-left: 5px;
+        }
+        button:hover{
+            transform: scale(1.08);
+            cursor: pointer;
+            background-color:white;
+            color: 0099ff;
+        }
+    </style>
+</head>
+<body>
+    <h1><img src="./twitter-logo-png-40407.png" width="40px" alt=""> Twitter</h1>
+    <form id="post">
+        <input type="text" class="email" placeholder="Username">
+        <input type="text" class="tweet" placeholder="Tweet">
+        <button class="post_tweet">Post Tweet</button>
+    </form>
+    <div class="tweets">
+        <ul class="tweet_list">
+
+        </ul>
+    </div>
+    <script src="./form_events.js"></script>
+</body>
+</html>
